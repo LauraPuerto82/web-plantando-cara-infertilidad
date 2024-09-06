@@ -1,0 +1,440 @@
+/* Importar fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Estilo general del HTML y BODY */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #deede9;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+header {
+    background-color: #a780a3;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.portada-header {
+    max-width: 100px;
+    height: auto;
+    margin: 0 25px;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-bar {
+    background-color: #58a793;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar:hover {
+    background-color: #4a8d7c;
+}
+
+.nav-bar:active {
+    background-color: #3a6b5c;
+}
+
+/* Estilos de títulos */
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    color: #a780a3;
+}
+
+/* Párrafos */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    color: #333;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Clases de énfasis */
+.bold {
+    font-weight: bold;
+}
+
+.p-author-bold {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.p-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    color: #58a793;
+    margin-top: 5px;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.cover {
+    height: auto;
+    max-height: 300px;
+    margin-bottom: 20px;
+}
+
+/* Sección principal */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Pie de página */
+footer {
+    background-color: #58a793;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    display: inline;
+}
+
+/* Sección de Noticias */
+.news-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.news-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease; /* Añadir animación */
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-title {
+    font-size: 2rem; /* Aumentar el tamaño de la fuente */
+    color: #2c3e50; /* Cambiar el color a un azul oscuro */
+    font-weight: bold; /* Hacer el título más grueso */
+    margin-bottom: 15px; /* Añadir más espacio debajo */
+    text-align: center; /* Centrar el título */
+}
+
+.news-description {
+    font-size: 1.1rem; /* Aumentar el tamaño de la fuente */
+    line-height: 1.7; /* Hacer el interlineado más grande */
+    color: #555; /* Cambiar el color del texto a gris */
+    margin-bottom: 20px;
+}
+
+/* Sección de Reseñas */
+.review-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-item:hover {
+    transform: translateY(-5px);
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #a780a3;
+    margin-bottom: 10px;
+}
+
+.review-item p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.review-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Sección de Prensa */
+.press {
+    padding: 10px 20px;
+}
+
+.press h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 10px 0;
+}
+
+.press h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+}
+
+.press p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.press-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.press-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 300px;
+}
+
+/* Sección de Compra del Libro */
+.buy-links {
+    margin: 20px 0;
+}
+
+.buy-link {
+    margin-bottom: 30px;
+}
+
+.buy-link h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #a780a3;
+    margin-bottom: 10px;
+}
+
+.buy-link p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #58a793;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #4a8c77;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .edition h2 {
+        font-size: 1.5rem;
+    }
+
+    .edition p {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-bar {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .news-card {
+        width: 100%;
+    }
+
+    .news-image-container {
+        height: 250px;
+    }
+
+    .review-item {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-bar {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .buy-link h3 {
+        font-size: 1.2rem;
+    }
+
+    .buy-link p {
+        font-size: 0.9rem;
+    }
+
+    .buy-button {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+}
